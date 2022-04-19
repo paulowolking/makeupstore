@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ProductsList">
+
+    <fragment
+        android:id="@+id/ProductsList"
+        android:name="com.wolking.makeupstore.presentation.ui.makeup.list.ListFragment"
+        android:label="@string/products_make_up"
+        tools:layout="@layout/fragment_list_products">
+
+        <action
+            android:id="@+id/action_to_detail"
+            app:destination="@id/DetailProduct" />
+        <action
+            android:id="@+id/action_to_favorite_product"
+            app:destination="@id/Favorites" />
+    </fragment>
+    <fragment
+        android:id="@+id/DetailProduct"
+        android:name="com.wolking.makeupstore.presentation.ui.makeup.detail.DetailFragment"
+        android:label="@string/detail_product"
+        tools:layout="@layout/fragment_detail_product">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/ProductsList" />
+    </fragment>
+    <fragment
+        android:id="@+id/Favorites"
+        android:name="com.wolking.makeupstore.presentation.ui.makeup.favorite.FavoriteFragment"
+        android:label="@string/my_favorites"
+        tools:layout="@layout/fragment_favorite">
+        <action
+            android:id="@+id/action_to_detail"
+            app:destination="@id/DetailProduct" />
+    </fragment>
+</navigation>

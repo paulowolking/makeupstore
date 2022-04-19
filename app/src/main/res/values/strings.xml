@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Makeup Store</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="products_make_up">Produtos</string>
+    <string name="detail_product">Detalhes do produto</string>
+    <string name="my_favorites">Meus favoritos</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message_empty_list">Nenhum item encontrado</string>
+    <string name="order">Ordenar</string>
+    <string name="filter">Filtrar</string>
+    <string name="biggest_price">Maior preço</string>
+    <string name="lowest_price">Menor preço</string>
+    <string name="name_a_z">Nome de A-Z</string>
+    <string name="name_z_a">Nome de Z-A</string>
+    <string name="clear_filter">Limpar</string>
+    <string name="error_search_items">Erro ao buscar itens</string>
+</resources>
