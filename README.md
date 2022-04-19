@@ -6,10 +6,11 @@ Este é um repositório que consome uma api de produtos cosméticos.
 Este aplicativo consome ```https://makeup-api.herokuapp.com/```.
 
 ## Arquitetura
-=> Essa é a divisão simplificada de pastas
+Essa é a divisão simplificada de pastas
 ```
     -data
         -database
+            - data_source
         -entities
             - product
                 - repository
@@ -30,12 +31,12 @@ Este aplicativo consome ```https://makeup-api.herokuapp.com/```.
                 -extensions
 ```
 
-=> 3 camadas principais
-```data``` = Responsável por manipular os dados de api e banco de dados
-```domain``` = Responsável por tratar os dados e fornecê-los para a camada de apresentação
-```presentation``` = Responsável pela visualização dos dados
+3 camadas principais<br/>
+```data``` = Responsável por manipular os dados de api e banco de dados<br/>
+```domain``` = Responsável por tratar os dados e fornecê-los para a camada de apresentação<br/>
+```presentation``` = Responsável pela visualização dos dados<br/>
 
-=> As implementações de repository ficam escondidas através de injeção de dependência, sendo o repository uma interface que precisa de outra classe que a
+As implementações de repository ficam escondidas através de injeção de dependência, sendo o repository uma interface que precisa de outra classe que a
 implemente, possuindo no final do nome "impl".
 
 ## Principais Bibliotecas
@@ -49,7 +50,7 @@ implemente, possuindo no final do nome "impl".
 
 ## Imagens do aplicativo
 <p float="left">
-<img src="" width="200" height="400" />
-<img src="" width="200" height="400" />
-<img src="" width="200" height="400" />
+<img src="https://github.com/paulowolking/makeupstore/blob/main/app/images/img.png" width="200" height="400" />
+<img src="https://github.com/paulowolking/makeupstore/blob/main/app/images/img_1.png" width="200" height="400" />
+<img src="https://github.com/paulowolking/makeupstore/blob/main/app/images/img_2.png" width="200" height="400" />
 </p>
